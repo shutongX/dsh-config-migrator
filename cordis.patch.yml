@@ -1,0 +1,4 @@
+# dsh bundle patch: inserts the config migrator host entry into a profile.
+- insert:
+    - id: dsh-config-migrator
+      name: 'dsh-config-migrator'

@@ -1,0 +1,60 @@
+{
+  "name": "dsh-config-migrator",
+  "version": "0.1.0",
+  "description": "Export selected DSH configuration sections as a zip and restore them on a new machine with a conflict preview.",
+  "private": false,
+  "type": "module",
+  "main": "./lib/index.js",
+  "icon": "./icon.svg",
+  "license": "MIT",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "cordis.patch.yml",
+    "icon.svg",
+    "locale/*.json",
+    "README.md",
+    "LICENSE",
+    "locale"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true
+    }
+  },
+  "author": "shutongX",
+  "homepage": "https://github.com/shutongX/dsh-config-migrator#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shutongX/dsh-config-migrator.git"
+  },
+  "bugs": {
+    "url": "https://github.com/shutongX/dsh-config-migrator/issues"
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "configuration",
+    "backup",
+    "migration",
+    "cordis"
+  ],
+  "engines": {
+    "dsh": ">=0.2.1-rc.1 <3"
+  },
+  "scripts": {
+    "test": "node --test test/*.test.mjs"
+  }
+}

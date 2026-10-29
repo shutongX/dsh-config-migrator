@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Config Migrator",
+    "description": "Export selected DSH configuration sections as a zip, then import them on a new machine with a conflict preview."
+  }
+}
