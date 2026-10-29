@@ -19,10 +19,10 @@
     "lib",
     "cordis.patch.yml",
     "icon.svg",
-    "locale/*.json",
+    "locale",
+    "docs",
     "README.md",
-    "LICENSE",
-    "locale"
+    "LICENSE"
   ],
   "dsh": {
     "bundle": {
