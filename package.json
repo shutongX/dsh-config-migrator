@@ -1,6 +1,6 @@
 {
   "name": "dsh-config-migrator",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Export selected DSH configuration sections as a zip and restore them on a new machine with a conflict preview.",
   "private": false,
   "type": "module",

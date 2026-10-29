@@ -30,6 +30,9 @@ https://shutongX.github.io/dsh-plugins-index/index.json
 dsh plugin --profile desktop add https://github.com/shutongX/dsh-config-migrator
 ```
 
+
+> 如果你以前用开发目录装过旧的 `@dsh-external/<name>` 版本，先移除旧插件，再装这里的无 scope 包；否则同一功能会同时加载两份。
+
 ## 怎么用
 
 打开 **设置 →「配置迁移」**，三个页签：导出 / 导入 / 快照。
